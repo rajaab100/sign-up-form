@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <header></header>
+    <nav></nav>
+    <main>
+      <div class="block01">
+        <section class="one">
+          <h1>Sign up</h1>
+          <p>to use all features of <br />the application</p>
+          <img
+            src="mozilla-foundation-firefox-web-browser-firefox-8528eef7244174e608a4f119878e9ca5.png"
+            alt="Logo"
+          />
+        </section>
+
+        <section class="two">
+          <img
+            src="Close-Outline--Streamline-Ionic-Outline.png"
+            alt="closebtn"
+          />
+          <p id="error" class="error"></p>
+          <form id="form" action="/" method="post">
+            <label for="username">User name</label>
+            <input id="txtusername" class="styleC" type="text" />
+            <label for="email">Email</label>
+            <input id="txtemail" type="text" class="styleC" />
+            <label for="password">Password</label>
+            <input id="txtpassword" class="styleC" type="text" />
+            <label for="repeatpassword">Repeat Password</label>
+            <input id="txtrepeatpassword" class="styleC" type="text" />
+            <br />
+            <div class="agreeBox">
+              <input id="checkbox" type="checkbox" class="checkbox" />
+              <p class="agreement">
+                by signing up I agree with
+                <a href="#">terms and conditions</a>
+              </p>
+            </div>
+
+            <button
+              type="button"
+              id="btnsignup"
+              class="btnsignup"
+              onclick="openPopup(event)"
+            >
+              Sign up
+            </button>
+            <p class="or">or</p>
+            <a href="#" class="login">Log in</a>
+          </form>
+        </section>
+
+        <section class="three">
+          <div class="popup" id="popupdiv">
+            <img
+              src="Custom-Icon-Design-Pretty-Office-2-Success.256(1).png"
+              alt=""
+            />
+            <h1>Thank You!</h1>
+            <p>Your details has been successfully submited. Thanks!.</p>
+            <button id="closeok" type="button" onclick="closePopup()">Ok</button>
+          </div>
+        </section>
+      </div>
+    </main>
+    
+  </body>
+</html>
